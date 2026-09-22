@@ -3,7 +3,7 @@ import {test, chromium } from "@playwright/test";
 //Create a Lead using CSS Selectors
 
 test('Create a Lead using CSS Selectors', async({page})=>{
-
+    console.log("Add new lead")
     await page.goto('http://leaftaps.com/opentaps/control/main')
     await page.locator('#username').fill("Demosalesmanager")
     await page.locator('#password').fill("crmsfa")
