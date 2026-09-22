@@ -10,12 +10,12 @@ test('Create a Lead using CSS Selectors', async({page})=>{
     await page.locator('.decorativeSubmit').click()
     await page.locator('a', { hasText: 'CRM/SFA' }).click();
     //await page.locator('//a[text()="Leads"]').click()
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(4000)
     await page.locator('//a[text()="Create Lead"]').click()
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(4000)
     await page.locator('input[id="createLeadForm_companyName"]').fill('Google')
   
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(4000)
     await page.locator('input[id="createLeadForm_firstName"]').fill('Kelvin')
 
     await page.locator('#createLeadForm_lastName').fill('Torson')
